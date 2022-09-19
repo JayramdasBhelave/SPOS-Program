@@ -1,0 +1,2 @@
+INCR	0
+DECR	5

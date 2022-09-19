@@ -1,0 +1,32 @@
+
+	********MACRO NAME TABLE**********
+
+	INDEX	NAME	ADDRESS
+	0	INCR	0
+	1	DECR	5
+
+
+	********ARGUMENT LIST**********
+
+	INDEX	NAME	ADDRESS
+	0	&X
+	1	&Y
+	2	&REG1
+	3	&A
+	4	&B
+	5	&REG2
+
+	********MACRO DEFINITION TABLE**********
+
+	INDEX		STATEMENT
+	0		INCR	&X	&Y	&REG1	=	AREG
+	1		MOVER	#3	#1
+	2		ADD	#3	#2
+	3		MOVEM	#3	#1
+	4		MEND
+	5		DECR	&A	&B	&REG2	=	BREG
+	6		MOVER	#6	#4
+	7		SUB	#6	#5
+	8		MOVEM	#6	#4
+	9		MEND
+
